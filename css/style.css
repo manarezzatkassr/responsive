@@ -101,17 +101,22 @@ nav img{
     margin-right: 10px;
 }
 .sec1{
-    display: flex;
     padding: 20px;
 }
 .right-sid{
     text-align: right;
+    width: 65%;
+    padding: 30px;
+}
+.sec1 .pic{
+    width: 30%;
+    margin-left: 30px;
 }
 .sec1 img{
-    width: 30%;
+    outline: 1px solid #79b730;
+    width: 85%;
     padding: 10px;
     margin: 10px ;
-    outline: 1px solid #79b730;
 }
 .main-head{
     text-align: left;
@@ -128,6 +133,9 @@ nav img{
     text-align: justify;
     padding: 10px;
     margin: 5px 25px;
+}
+.sec1 .con1{
+    display: flex;
 }
 .qoute{
     border: 2px solid #fff;
@@ -156,14 +164,15 @@ nav img{
     display: flex;
     justify-content: space-between;
     width: 95%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .info{
     position: relative;
-    left: 50px;
-    top: 20px;
-    margin: 10px;
-    padding: 10px 60px;
-    text-align: left;
+    right: 20px;
+    margin: 10px 5px;
+    translate: 40px 10px;
+    padding: 10px 50px;
     background-color: #fff;
     border-radius: 5px;
 }
@@ -347,19 +356,6 @@ footer {
     margin: 5px;
     border: 1px solid #79b730;
 }
-@media (max-width: 992px) {
-    footer .flex{
-        flex-direction: column;
-    }
-    .text-box {
-        width: 40%;
-        text-align: justify;
-        position: absolute;
-        top: 45px;
-        left: 70px;
-        padding: 10px;
-    }
-}
 @media (max-width: 768px) {
     .container{
        width: 100%;
@@ -376,18 +372,20 @@ footer {
         height: 50px;
     }
     .text-box h1{
-        font-size: 18px;
+        font-size: 26px;
+        font-weight: bold;
     }
     .text-box h2{
-        font-size: 13px;
+        font-size: 20px;
+        font-weight: bold;
     }
     .text-box p{
-        font-size: 6px;
+        font-size: 10px;
     }
     .text-box .btn1{
         margin: 5px auto;
-        font-size: 6px;
-    padding: 6px 10px;
+        font-size: 10px;
+        padding: 6px 10px;
     }
     .nav-links label{
         display: block;
@@ -405,7 +403,6 @@ footer {
     }
     .nav-links .show a{
         display: block;
-        color: #fff ;
         padding: 10px 20px;
     }
     .nav-links .show a:hover{
@@ -418,250 +415,53 @@ footer {
     .sec1, .sec2{
         text-align: center;
     }
+    .con1{
+        flex-direction: column;
+    }
     .right-sid{
         text-align: left;
-    }
-    .sec1 img{
         width: 95%;
-        padding: 10px;
-        margin: 10px ;
-        outline: 2px solid #79b730;
+    }
+    .sec1 .pic{
+        width: 95%;
     }
     .main-head{
         text-align: left;
-    }
-     .main-head h5, .main-head h1{
-        padding: 0px 30px;
-        margin: 0px 35px;
-        border-left: 5px solid #79b730;
-    }
-    .main-head h5{
-        color: #79b730;
     }
     .sec1 .right-sid p {
         text-align: justify;
         padding: 10px;
         margin: 5px 25px;
     }
-    .qoute{
-        border: 2px solid #fff;
-        border-radius: 5px;
-        text-align: center;
-        margin-left: 20px;
-        margin-bottom: 10px;
-        padding-top: 10px;
-    }
-    .qoute a{
-        color: #79b730;
-        margin: 5px;
-        padding: 5px 40px;
-        border-radius: 5px;
-    }
-    .qoute .main-btn{
-        background-color: #fff;
-    }
-    .qoute a:hover{
-        background-color: #fff;
-    }
-    .sec2{
-        padding-bottom: 50px;
-    }
     .flex{
         flex-direction: column;
     }
     .info{
-        position: relative;
-        width: 80%;
-        left: 50px;
-        top: 20px;
-        margin: 10px;
-        padding: 10px 60px;
         text-align: left;
-        background-color: #fff;
-        border-radius: 5px;
-    }
-    .info .icon i{
-        position: absolute;
-        left: 0px;
-        top: 5px;
-        margin: 10px 20px;
-        font-size: 40px;
-        color: #8c8c8a;
-    }
-    .info h1, .info .topic{
-        margin: 5px;
-        margin-left: 20px;
-        text-align: justify;
-    }
-    .info h5{
-        text-align: right;
-    }
-    .info h5 a{
-        color: #79b730;
+        margin: 50px;
+        justify-content: center;
     }
     .sec3{
-        background-image: url(../img/Banner-2.jpg);
-        background-position: center;
-        background-size: cover;
-        padding: 20px;
-        text-align: center;
+        padding: 40px;
     }
-    .sec3 .main-head h5, .sec3 .main-head h1{
-        color: #000;
-        border-color: #000;
-    }
-    .sec3 .topic{
-        text-align: justify;
-        padding: 10px 0px;
-        padding-left: 35px;
-    }
-    .sec4{
-        background-color: #fff;
-        padding: 20px;
-    }
-    .sec4 .main-head{
+    .sec4 .sub1, .sec4 .sub2 {
+        translate: 120px 0px;
         margin: 10px;
-    }
-    .sub1, .sub2{
-        border: 2px dotted #fff;
-        text-align: center;
-        background-color: #f3f3f3;
-        width: 60%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 20px;
-        padding: 20px 0px;
-    }
-    .sub1 ul, .sub2 ul{
-        text-align: left;
-        padding: 10px 20px;
-    }
-    .sub1 ul li, .sub2 ul li{
-        padding-top: 10px;
-        position: relative;
-    }
-    .sub1 ul li span, .sub2 ul li span{
-        color: #79b730;
-        text-align: right;
-        position: absolute;
-        right: 0px;
-    }
-    .sub1 .wrong, .sub2 .wrong{
-        color: #de2f40;
-    }
-    .sub1 .title{
-        color: #79b730;
-        font-size: 28px;
-        padding: 10px;
-    }
-    .sub2 .title{
-        color: #000;
-        font-size: 28px;
-    }
-    .sub1 .offer, .sub2 .offer{
-        padding: 10px;
-    }
-    .sub1 .offer, .sub1 .btn-1{
-        font-size: 28px;
-        color: #fff;
-        background-color: #79b730;
-    }
-    .sub1 .offer sup, .sub2 .offer sup,.sub1 .offer sub, .sub2 .offer sub{
-        font-size: 10px;
-        font-weight: lighter;
-    }
-    .sub2 .offer, .sub2 .btn-1, .sec3 .btn-1{
-        font-size: 28px;
-        color: #fff;
-        background-color: #000;
-    }
-    .sub1 .btn-1, .sub2 .btn-1, .sec3 .btn-1{
-        font-size: 15px;
-        padding: 5px;
-        border-radius: 20px;
-        border: 0px solid #79b730;
     }
     .sec5{
-        padding: 10px;
-        background-color: #fff;
+        padding: 0px;
     }
-    .sec5 .con2{
-        display: flex;
-        margin: 10px;
-        background-color: #f3f3f3;
+}
+@media (max-width: 992px) {
+    footer .flex{
+        flex-direction: column;
     }
-    .con2 img{
-        flex: 1;
-        text-align: left;
+    .text-box {
         width: 40%;
-        margin: 10px;
-    }
-    .con2 .sid1{
+        text-align: justify;
+        position: absolute;
+        top: 45px;
+        left: 70px;
         padding: 10px;
     }
-    .con2 .main-head h5, .con2 .main-head h1{
-        font-size: 13px;
-        padding: 5px 10px;
-        margin: 0px;
-    }
-    .con2 .main-head h1{
-        font-size: 15px;
-    }
-    .con2 p{
-        margin: 10px;
-    }
-    footer {
-        padding: 15px;
-    }
-    .con3, .con4, .con5{
-        text-align: left;
-        padding-left: 30PX;
-        margin: 20PX;
-    }
-    .con3 P, .con3 h4{
-      text-align: justify;
-      margin: 10px;
-      padding-left: 30PX;
-      color: #8c8c8a;
-    }
-    .con3 h4 i, .con4 h4 i, .con5 a{
-        color: #79b730;
-    }
-    .con4 h4{
-        margin: 10px;
-        padding-left: 30PX;
-        color: #8c8c8a;
-    }
-    .con4 h4 a{
-        color: #656563;
-    }
-    .con5 .mail{
-        border: 1px solid #8c8c8a ;
-        padding: 10px;
-        margin: 10px;
-        margin-left: 35px;
-        margin-right: 0px;
-    }
-    .con5 button{
-        padding: 10px;
-        color: #fff;
-        background-color: #79b730;
-        border: 1px solid #8c8c8a;
-    }
-     .con5 h5, .con5 .icon{
-        padding-left: 30px;
-        margin: 5px;
-        margin-top: 10px;
-    }
-    .con5 .icon a{
-        padding: 5px;
-        margin: 5px;
-        border: 1px solid #79b730;
-    }
-}
-@media (min-width: 768px){
-
-}
-@media (min-width: 992px) {
-    
 }
