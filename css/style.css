@@ -451,6 +451,9 @@ footer {
     .sec5{
         padding: 0px;
     }
+    .con5 button{
+        margin-left: 40px;
+    }
 }
 @media (max-width: 992px) {
     footer .flex{
